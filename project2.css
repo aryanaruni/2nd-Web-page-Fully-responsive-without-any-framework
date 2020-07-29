@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* LOGO */
+
+#logo img {
+    width: 65px;
+    margin-left: 27px;
+    margin-bottom: -2px;
+    margin-right: 19px;
+}
+
+/* Navbar list list-styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 2px 9px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* HOME  section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('/1st\ pic.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 498px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.h-primary {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    padding: 34px;
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    font-size: 19px;
+    font-family: cursive;
+    width: 60%;
+}
+
+.btn {
+    padding: 7px 17px;
+    border: 3px solid black;
+    color: white;
+    background-color: #565656;
+    font-size: 17px;
+    border-radius: 26px;
+    margin-bottom: 7px;
+    margin-top: 9px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    padding: 7px 17px;
+    border: 3px solid black;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    border-radius: 26px;
+    margin-bottom: 7px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+/* Food-Services */
+
+#services-container {
+    background-color: #716a6a21;
+}
+
+#services-h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 20px;
+}
+
+#services {
+    margin: 24px 37px 10px 37px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#services .services-item {
+    width: 22%;
+    background-color: #716a6a21;
+    border-radius: 33px;
+    border: 2px solid black;
+    margin-bottom: 23px
+}
+
+#services .services-item img {
+    height: 143px;
+    display: block;
+    margin: auto;
+    padding-top: 34px;
+    padding-bottom: 10px;
+}
+
+.services-item .services-item-h2 {
+    padding-bottom: 10px;
+    padding-top: 3px;
+    font-size: 1.4rem;
+}
+
+.services-item p {
+    padding: 9px 15px 18px 15px;
+}
+
+.services-item .services-item-h2, p {
+    text-align: center;
+}
+
+/* CLIENTS */
+
+#clients-container {
+    position: relative;
+    margin-top: -10px;
+}
+
+#clients-container::before {
+    content: "";
+    position: absolute;
+    background: url(/clients/bg.jpg);
+    width: 100%;
+    height: 201px;
+    z-index: -1;
+    opacity: 0.3;
+    background-position: center center;
+    background-size: cover;
+}
+
+#clients-h1 {
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 15px 0px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-box {
+    margin: 9px 40px 24px 40px;
+}
+
+#clients .clients-box img {
+    height: 100px;
+}
+
+/* CONTACT US  */
+
+#contact-us {
+    position: relative;
+}
+
+#contact-us-h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 20px;
+}
+
+#contact-us::before {
+    content: "";
+    position: absolute;
+    background: url(/contact.png.jpg);
+    width: 100%;
+    height: 340px;
+    z-index: -1;
+    opacity: 0.4;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact-us-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+/* #contact-us-form form {
+    width: 50%;
+} */
+
+.contact-us-form-box {
+    width: 100%;
+}
+
+#contact-us-form label {
+    font-size: 20px;
+}
+
+#contact-us-form input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    margin: 0px 0px;
+    padding: 10px 10px;
+}
